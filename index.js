@@ -66,8 +66,8 @@ console.log(generateTrackingId());
 async function run(){
     try{
        await client.connect();
-       await client.db('admin').command({ping:1})  
-       console.log("connect to mongodb");
+      //  await client.db('admin').command({ping:1})  
+      //  console.log("connect to mongodb");
 
        const database=client.db('Parcel-delivery-project');
        const dataCollection=database.collection('userData');
