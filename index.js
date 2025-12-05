@@ -24,7 +24,7 @@ const verifyFBToken=async(req,res,next)=>{
   //  console.log("headers in the middleware",req.headers.authorization);
    const token=req.headers.authorization;
     //  console.log(token);
-    console.log(token);
+    
    if(!token){
     return res.status(401).send({message:'Unauthorized'})
    }
